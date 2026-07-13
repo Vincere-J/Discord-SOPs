@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vincere Trading | Support Guides</title>
+<style>
+:root{--indigo-700:#4A3F9C;--ink:#3b3c52;--ink-soft:#42415f;--bg:#F7F5FD;--card:#FFFFFF;--line:#E5E1F5;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;padding:48px 20px 80px;}
+.wrap{max-width:860px;margin:0 auto;}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--indigo-700);margin-bottom:10px;}
+h1{font-size:34px;line-height:1.15;margin-bottom:10px;}
+h1 .light{color:var(--indigo-700);}
+.lede{color:var(--ink-soft);max-width:640px;margin-bottom:40px;font-size:16px;}
+h2{font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--indigo-700);margin:36px 0 14px;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:640px){.grid{grid-template-columns:1fr;}}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink);transition:border-color .15s, box-shadow .15s;}
+a.card:hover{border-color:var(--indigo-700);box-shadow:0 4px 14px rgba(74,63,156,.10);}
+a.card b{display:block;font-size:15px;margin-bottom:4px;color:var(--ink);}
+a.card span{font-size:13px;color:var(--ink-soft);}
+footer{margin-top:56px;font-size:13px;color:var(--ink-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Vincere Trading</div>
+  <h1>Support <span class="light">Guides</span></h1>
+  <p class="lede">Step-by-step written guides for setting up and running your algos. Pick the guide that matches your setup. If you get stuck, post in your Discord channel with a screenshot.</p>
+
+  <h2>Getting Connected</h2>
+  <div class="grid">
+    <a class="card" href="vps-rdp-connect.html"><b>Connect to Your VPS (Windows)</b><span>Remote Desktop setup from a Windows computer.</span></a>
+    <a class="card" href="vps-mac-connect.html"><b>Connect to Your VPS (Mac)</b><span>The Apple companion guide, using the Windows App.</span></a>
+  </div>
+
+  <h2>Setup Basics</h2>
+  <div class="grid">
+    <a class="card" href="vincere-ninja-manager-setup.html"><b>Set Up the Vincere Ninja Manager</b><span>Install and hook up the Ninja Manager.</span></a>
+    <a class="card" href="vincere-license-key-reset.html"><b>Reset Your Vincere License Key</b><span>When to reset and exactly how to do it.</span></a>
+    <a class="card" href="risk-templates.html"><b>Choose Your Algo Template</b><span>PF or Non-PF, version, and risk level explained.</span></a>
+    <a class="card" href="no-trades-checklist.html"><b>My Algos Are Not Taking Trades</b><span>The quick checklist to find the cause.</span></a>
+  </div>
+
+  <h2>Prop Firm Accounts</h2>
+  <div class="grid">
+    <a class="card" href="prop-connect-ninjatrader.html"><b>Connect Your Prop Firm to NinjaTrader</b><span>Link your funded account and load strategies.</span></a>
+    <a class="card" href="prop-daily-profit-trigger.html"><b>Set a Daily Profit Trigger</b><span>Stay inside consistency rules automatically.</span></a>
+    <a class="card" href="prop-delayed-data.html"><b>Fix Delayed Data</b><span>Clear the "real time market data required" banner.</span></a>
+  </div>
+
+  <h2>Cash Accounts</h2>
+  <div class="grid">
+    <a class="card" href="cash-allocation-tool.html"><b>Cash Account Algo Distribution Tool</b><span>Allocate algos across your cash account.</span></a>
+    <a class="card" href="cash-market-data.html"><b>Live Market Data and Account Plans</b><span>Get the right NinjaTrader data plan.</span></a>
+    <a class="card" href="cash-sub-accounts.html"><b>Request Sub-Accounts from NinjaTrader</b><span>Set up sub-accounts for your portfolio.</span></a>
+  </div>
+
+  <h2>Monthly Updaters</h2>
+  <div class="grid">
+    <a class="card" href="https://vincere-j.github.io/VT-Updater/"><b>Prop Firm Updater</b><span>Current PF updater walkthrough and reassign guide.</span></a>
+    <a class="card" href="https://vincere-j.github.io/VT-Cash-Updater/"><b>Cash Updater</b><span>Current cash updater walkthrough and reassign guide.</span></a>
+  </div>
+
+  <footer>Vincere Trading support library. Questions? Post in your Discord channel.</footer>
+</div>
+</body>
+</html>
