@@ -121,13 +121,36 @@
   <h1>Run the updater<br><span class="light">(installer).</span></h1>
   <p class="lede">This walks you through running the Vincere Futures Algo Updater for cash accounts: downloading and extracting the package, then running the five numbered tools in order. Complete the whole process inside your VPS.</p>
   
-  <nav class="phasenav"><a class="pill active" href="vincere-cash-updater-7.0.html">1. Run the installer</a><a class="pill" href="reassign-strategies.html">2. Reassign strategies</a></nav>
+  <nav class="phasenav"><a class="pill active" href="vincere-cash-updater-7.0.html">1. Run the installer</a><a class="pill" href="vincere-cash-assign-algos.html">2. Reassign strategies</a></nav>
   <div class="meter" role="status" aria-live="polite">
     <div class="meter-count"><b id="doneCount">0</b> of 8 done</div>
     <div class="meter-bar"><div class="meter-fill" id="meterFill"></div></div>
     <p class="meter-note" id="meterNote"></p>
   </div>
+  <div class="overview" style="margin-top:22px">
+    <p style="margin:0 0 6px"><strong>Before you begin.</strong> If you want to keep your current strategy placement for reference, screenshot your <strong>Strategies</strong> tab (and Accounts tab) first. Then fully close <strong>NinjaTrader</strong> <em>and</em> the <strong>Vincere Ninja Manager</strong> before you run the installer, or it will warn you to close the manager.</p>
+    <p style="margin:8px 0 0">The Vincere Ninja Manager often sits hidden in the system tray. Click the <strong>^</strong> ("show hidden icons") in the bottom-right of your taskbar, then right-click the Vincere Ninja Manager and choose Exit.</p>
+    <figure class="shot" style="margin-top:14px">
+      <svg viewBox="0 0 680 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Windows system tray with the show hidden icons chevron highlighted" style="display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--card-edge);background:#0f0f18">
+        <rect x="0" y="112" width="680" height="58" fill="#15151f"/>
+        <rect x="300" y="20" width="332" height="58" rx="12" fill="#EEF0FB" stroke="#6A5FC6" stroke-width="1.5"/>
+        <text x="318" y="45" fill="#2E2675" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">Click the ^ to show hidden icons &#8212;</text>
+        <text x="318" y="65" fill="#4A3F9C" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="600">the Vincere Ninja Manager lives here.</text>
+        <path d="M470 78 C 462 96, 494 100, 491 118" fill="none" stroke="#6A5FC6" stroke-width="2" stroke-dasharray="4 4"/>
+        <rect x="470" y="120" width="42" height="42" rx="8" fill="#251f47" stroke="#6A5FC6" stroke-width="3"/>
+        <path d="M481 148 L491 137 L502 148" fill="none" stroke="#C9C2F2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="524" y="132" width="18" height="18" rx="4" fill="#3a3a4d"/>
+        <circle cx="562" cy="141" r="9" fill="#3a3a4d"/>
+        <text x="600" y="138" fill="#c7c7d6" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="600">9:41 AM</text>
+        <text x="600" y="157" fill="#8f8fa6" font-family="Inter,system-ui,sans-serif" font-size="13">7/28/2026</text>
+      </svg>
+      <figcaption>System tray: click the ^ to find the Vincere Ninja Manager</figcaption>
+    </figure>
+  </div>
   <ol class="steps" id="steps"></ol>
+  <div class="overview" style="margin-top:24px">
+    <p style="margin:0"><strong>One more check.</strong> Before running these tools, make sure both <strong>NinjaTrader</strong> and the <strong>Vincere Ninja Manager</strong> (in the system tray, under the <strong>^</strong>) are fully closed. If you want your old strategy layout for reference, screenshot the Strategies tab first.</p>
+  </div>
   <section class="finish locked" id="finish" aria-live="polite">
     <div class="node" aria-hidden="true">&#9733;</div>
     <h2 id="finishTitle"></h2><p id="finishBody"></p>
