@@ -107,7 +107,7 @@ footer p{border-top:1px solid var(--line);padding-top:16px;margin:0}
 <h1>Inside the Trades</h1>
 <p class="lead">What is the why behind the results? On the 10/13 Coffee &amp; Algos call, Jake walked through 15 example trades from tick data backtests: 5 algos, 3 trades each, with 2 winners and 1 loser for every algo.</p>
 <p>These pages show what each algo looks for, when it trades, how many contracts it uses and why, and how a setup plays out from start to finish. All 15 trades are recent, from 9/21/2026 to 10/12/2026.</p>
-<!--v4jump--><nav class="jump" aria-label="Jump to the trades"><p class="jump-h">Jump to the trades</p><div class="jumpbtns"><a class="jbtn" href="inside-the-trades-ogx.html"><b>OGX</b><span>Breakout</span></a><a class="jbtn" href="inside-the-trades-urgo.html"><b>URGO</b><span>Squeeze</span></a><a class="jbtn" href="inside-the-trades-b2x.html"><b>B2X</b><span>Squeeze after a push</span></a><a class="jbtn" href="inside-the-trades-fsa.html"><b>FSA</b><span>Gap</span></a><a class="jbtn" href="inside-the-trades-mst.html"><b>MST</b><span>Trend, buys only</span></a></div><p class="jump-sub">Each button opens the 3 trades for that algo. Or scroll down to <a href="#algos">The 5 algos</a> for a quick summary of each.</p></nav><!--/v4jump-->
+<!--v4jump--><nav class="jump" aria-label="Jump to the trades"><p class="jump-h">Jump to the trades</p><div class="jumpbtns"><a class="jbtn" href="inside-the-trades-ogx.html"><b>OGX</b><span>Breakout</span></a><a class="jbtn" href="inside-the-trades-urgo.html"><b>URGO</b><span>Squeeze</span></a><a class="jbtn" href="inside-the-trades-b2x.html"><b>B2X</b><span>Squeeze after a push</span></a><a class="jbtn" href="inside-the-trades-fsa.html"><b>FSA</b><span>Gap</span></a><a class="jbtn" href="inside-the-trades-mst.html"><b>MST</b><span>Trend, buys only</span></a><a class="jbtn" href="inside-the-trades-arpd.html"><b>ARPD</b><span>Breakout</span></a><a class="jbtn" href="inside-the-trades-djdr.html"><b>DJDR</b><span>Breakout</span></a><a class="jbtn" href="inside-the-trades-g4m.html"><b>G4M</b><span>Squeeze</span></a><a class="jbtn" href="inside-the-trades-ifsp.html"><b>IFSP</b><span>Early breakout</span></a><a class="jbtn" href="inside-the-trades-plpi.html"><b>PLPI</b><span>Breakout</span></a><a class="jbtn" href="inside-the-trades-rbo.html"><b>RBO</b><span>Breakout</span></a><a class="jbtn" href="inside-the-trades-syfy.html"><b>SYFY</b><span>Breakout</span></a></div><p class="jump-sub">Each button opens the 3 trades for that algo. Or scroll down to <a href="#algos">The 5 algos</a> for a quick summary of each.</p></nav><!--/v4jump-->
 <div class="box"><h2>Why a losing trade is shown on purpose</h2>
 <p>Losing trades are a normal part of every trading style. Each algo sets its stop and targets before the trade is even entered, so a loss is planned to be about a set size. Seeing a loser next to two winners shows how the plan works when a setup does not follow through. Losses can also be a little larger than planned after fees, or when the stop fills past its price.</p></div>
 <section><h2>How to read a trade</h2><p class="sub tie">The numbers on the drawing match the five steps below.</p><svg class="dg-desk" viewBox="0 0 700 300" role="img" aria-label="Diagram of a trade: a setup box, an entry arrow, a stop line below, two target lines above and exits at the targets">
@@ -180,7 +180,56 @@ footer p{border-top:1px solid var(--line);padding-top:16px;margin:0}
 <p><b>Contracts:</b> Always 1 full size Dow contract. Planned risk about $325.</p>
 <p class="sub">3 backtest trades: 2 winners and 1 loser</p>
 <div class="chips"><span class="chip win">A: Win +$420.64</span><span class="chip win">B: Win +$420.64</span><span class="chip loss">C: Loss -$329.36</span></div>
-<a class="btn" href="inside-the-trades-mst.html">See the MST trades</a></div></div>
+<a class="btn" href="inside-the-trades-mst.html">See the MST trades</a></div></div><!--b2--><h2 id="algos2" style="margin-top:28px">7 more algos</h2><p class="sub">Added 10/26/2026: 21 more backtest trades from 10/8/2026 to 10/26/2026, 3 for each algo, with 2 winners and 1 loser for every algo.</p><div class="grid"><div class="card"><h3><a href="inside-the-trades-arpd.html">ARPD</a></h3>
+<div><span class="pill">Breakout</span><span class="pill">Micro Gold (MGC)</span></div>
+<p><b>Looks for:</b> An opening range breakout on the Micro Gold (MGC). ARPD marks the high and low of price from 9:30 AM to 9:55 AM ET, then trades a break of that range, long or short.</p>
+<p><b>When it trades:</b> 9:35 AM to 2:50 PM ET, Monday, Tuesday, Thursday and Friday.</p>
+<p><b>Contracts:</b> Always 2 contracts, 1 for each of the 2 targets. Planned risk about $600.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$598.40</span><span class="chip win">B: Win +$168.40</span><span class="chip loss">C: Loss -$603.60</span></div>
+<a class="btn" href="inside-the-trades-arpd.html">See the ARPD trades</a></div><div class="card"><h3><a href="inside-the-trades-djdr.html">DJDR</a></h3>
+<div><span class="pill">Breakout</span><span class="pill">Full size Dow (YM)</span></div>
+<p><b>Looks for:</b> An opening range breakout on the Full size Dow (YM). DJDR marks the high and low of price from 9:00 AM to 9:30 AM ET, then trades a break of that range, long or short.</p>
+<p><b>When it trades:</b> 9:30 AM to 1:40 PM ET, Tuesday, Thursday and Friday.</p>
+<p><b>Contracts:</b> Always 1 full size Dow (YM) contract. Planned risk about $250.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$745.64</span><span class="chip win">B: Win +$450.64</span><span class="chip loss">C: Loss -$254.36</span></div>
+<a class="btn" href="inside-the-trades-djdr.html">See the DJDR trades</a></div><div class="card"><h3><a href="inside-the-trades-g4m.html">G4M</a></h3>
+<div><span class="pill">Squeeze</span><span class="pill">Micro S&amp;P 500 (MES)</span></div>
+<p><b>Looks for:</b> A squeeze style algo on the 15 minute Micro S&amp;P 500 (MES) chart. It does not use an opening range.</p>
+<p><b>When it trades:</b> 9:35 AM to 1:30 PM ET, Tuesday, Thursday and Friday.</p>
+<p><b>Contracts:</b> Always 4 contracts, split 2, 1 and 1 across 3 targets. Planned risk about $400.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$454.80</span><span class="chip win">B: Win +$322.30</span><span class="chip loss">C: Loss -$405.20</span></div>
+<a class="btn" href="inside-the-trades-g4m.html">See the G4M trades</a></div><div class="card"><h3><a href="inside-the-trades-ifsp.html">IFSP</a></h3>
+<div><span class="pill">Early breakout</span><span class="pill">Natural Gas (NG)</span></div>
+<p><b>Looks for:</b> An opening range breakout on the Natural Gas (NG). IFSP marks the high and low of price from 8:00 AM to 8:30 AM ET, then trades a break of that range, long or short.</p>
+<p><b>When it trades:</b> 8:30 AM to 11:00 AM ET, Monday and Wednesday.</p>
+<p><b>Contracts:</b> Always 1 contract. Planned risk about $300.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$405.20</span><span class="chip win">B: Win +$405.20</span><span class="chip loss">C: Loss -$304.80</span></div>
+<a class="btn" href="inside-the-trades-ifsp.html">See the IFSP trades</a></div><div class="card"><h3><a href="inside-the-trades-plpi.html">PLPI</a></h3>
+<div><span class="pill">Breakout</span><span class="pill">Platinum (PL)</span></div>
+<p><b>Looks for:</b> An opening range breakout on the Platinum (PL). PLPI marks the high and low of price from 9:00 AM to 9:35 AM ET, then trades a break of that range, long or short.</p>
+<p><b>When it trades:</b> 9:35 AM to 10:30 AM ET, Tuesday, Wednesday, Thursday and Friday.</p>
+<p><b>Contracts:</b> Always 1 contract. Planned risk about $300.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$605.00</span><span class="chip win">B: Win +$600.00</span><span class="chip loss">C: Loss -$300.00</span></div>
+<a class="btn" href="inside-the-trades-plpi.html">See the PLPI trades</a></div><div class="card"><h3><a href="inside-the-trades-rbo.html">RBO</a></h3>
+<div><span class="pill">Breakout</span><span class="pill">Micro Russell (M2K)</span></div>
+<p><b>Looks for:</b> An opening range breakout on the Micro Russell (M2K). RBO marks the high and low of price from 9:20 AM to 10:00 AM ET, then trades a break of that range, long or short.</p>
+<p><b>When it trades:</b> 9:35 AM to 11:00 AM ET, Monday to Friday.</p>
+<p><b>Contracts:</b> 6 contracts, 2 for each of the 3 targets. Planned risk about $300. Edge Leverage is on, so the next trade after a stop out that day uses 12 contracts.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$567.20</span><span class="chip win">B: Win +$567.20</span><span class="chip loss">C: Loss -$307.80</span></div>
+<a class="btn" href="inside-the-trades-rbo.html">See the RBO trades</a></div><div class="card"><h3><a href="inside-the-trades-syfy.html">SYFY</a></h3>
+<div><span class="pill">Breakout</span><span class="pill">Micro S&amp;P 500 (MES)</span></div>
+<p><b>Looks for:</b> An opening range breakout on the Micro S&amp;P 500 (MES). SYFY marks the high and low of price from 9:35 AM to 9:55 AM ET, then trades a break of that range, long or short.</p>
+<p><b>When it trades:</b> 9:30 AM to 2:30 PM ET, Monday, Tuesday, Thursday and Friday.</p>
+<p><b>Contracts:</b> Always 4 contracts, split 2, 1 and 1 across 3 targets. Planned risk about $400.</p>
+<p class="sub">3 backtest trades: 2 winners and 1 loser</p>
+<div class="chips"><span class="chip win">A: Win +$894.80</span><span class="chip win">B: Win +$792.30</span><span class="chip loss">C: Loss -$405.20</span></div>
+<a class="btn" href="inside-the-trades-syfy.html">See the SYFY trades</a></div></div><!--/b2-->
 <section><h2>The big picture</h2>
 <p><b>Different styles, different days.</b> A breakout, a squeeze, a gap and a trend style do not all need the same market. Because each style looks for a different kind of market, the algos often trade on different days and do not all win or lose at the same time.</p>
 <p><b>Stops and targets come first.</b> For every algo here, the stop and the targets are set before the trade is entered. The planned risk to the stop in these examples:</p>
