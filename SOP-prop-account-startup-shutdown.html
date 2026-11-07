@@ -85,6 +85,10 @@
   .foot .i{color:var(--blue);font-weight:800;}
   .stamp{text-align:right;font-size:11px;color:var(--dim);margin-top:18px;letter-spacing:.5px;}
   @media(max-width:560px){h1{font-size:26px;}.pill{margin-left:0;}}
+  .sec p.manual-only,.manual-only{font-size:22.5px;font-weight:800;letter-spacing:1.5px;color:var(--red);margin:4px 0 4px;}
+  .sec p.manual-sub,.manual-sub{font-size:14px;color:var(--mut);margin-bottom:16px;}
+  .info{display:flex;gap:10px;align-items:flex-start;font-size:16.1px;color:var(--txt);background:rgba(59,130,246,.10);border:1px solid rgba(59,130,246,.35);border-left:3px solid var(--blue);border-radius:10px;padding:13px 16px;margin-bottom:20px;}
+  .info .i{color:var(--blue);font-weight:800;} .info b{color:var(--txt);} .info ul.vnm{margin:8px 0 8px 18px;padding:0;} .info ul.vnm li{margin:4px 0;}
 </style>
 
 <div class="wrap">
@@ -94,20 +98,30 @@
   <h1>Prop Account Startup &amp; Shutdown Process</h1>
   <div class="lede"><span class="i">&#9432;</span><span>All times in ET. Follow the steps below to start or shut down your prop firm algo setup safely.</span></div>
 
+  <div class="info"><span class="i">&#9432;</span><span><b>Using Vincere Ninja Manager (VNM)?</b> VNM handles the daily startup, so you can skip the Startup steps below. You still need to:
+    <ul class="vnm">
+      <li><b>Keep ready state showing every day:</b> VNM open, the NinjaTrader Control Panel <b>Strategies tab</b> open, and a <span class="g">green dot</span> (Connections &gt; Live). Leave VNM and the Strategies tab showing and unobstructed.</li>
+      <li><b>Do the Shutdown and Full Shutdown</b> below.</li>
+      <li><b>After any restart and on Monday, get back to ready state:</b> open the VPS (check the ^ tray arrow first so you don&rsquo;t open VNM twice), open VNM, open NinjaTrader and log in, open the Strategies tab, click Connections &gt; Live, then in VNM enable the strategies, wait for them to connect, then disable.</li>
+    </ul>
+    Without VNM, follow every step on this page. This is the manual startup and shutdown process.</span></div>
+
   <!-- 1 STARTUP -->
   <div class="sec">
     <div class="sec-head">
       <div class="sec-num">1</div>
       <div class="sec-title">Startup <small>Daily or after a shutdown</small></div>
-      <div class="pill time">By <b>8:30a ET</b><br>as early as 7:30a ET</div>
+      <div class="pill time">Before <b>9:30 AM ET</b></div>
     </div>
+    <p class="manual-only">MANUAL ONLY</p>
+    <p class="manual-sub">These are the manual startup steps. VNM users skip this section.</p>
     <ol class="steps">
       <li>Connect to your VPS by clicking the Remote Desktop shortcut (or the Windows App on Mac / Apple).</li>
       <li>Once the VPS loads in another window, double-click NinjaTrader to launch.</li>
       <li>Go to the Connections menu &gt; your prop firm connection (<span class="g">Lucid, Legends, My Funded Futures, Blusky,</span> or <span class="g">Tradeify</span>).</li>
       <li>Verify charts are running (moving candlesticks).</li>
-      <li>Check the Strategies tab &mdash; all strategy boxes should be <span class="g">green / true</span>.</li>
-      <li>Enable all strategies before <b>8:30a ET</b> (as early as 7:30a ET). Any earlier can cause issues.</li>
+      <li>Check the Strategies tab: all strategy boxes should be <span class="g">green / true</span>.</li>
+      <li>Enable all strategies before <b>9:30 AM ET</b>.</li>
       <li>You&rsquo;re ready to trade. Leave NinjaTrader running.</li>
     </ol>
     <div class="note"><b>Quick note:</b> if NinjaTrader is already running (you did not shut down), just go to Connections &gt; your prop firm connection (<span class="g">Lucid, Legends, My Funded Futures, Blusky,</span> or <span class="g">Tradeify</span>) and continue from step 3.</div>
@@ -145,7 +159,7 @@
       <div class="sec-title">Shutdown <small>Every 3rd day</small></div>
     </div>
     <p style="font-size:15px;">Simply click the <span class="r">Red X</span> in the <span class="b">Control Panel only</span>.</p>
-    <div class="flag">&#9888;&#65039; <span>NOT in Charts or Backtest &mdash; they will be lost permanently.</span></div>
+    <div class="flag">&#9888;&#65039; <span>NOT in Charts or Backtest, they will be lost permanently.</span></div>
     <div class="mock">
       <div class="mock-bar">Control Panel <span class="x">&#10005;</span></div>
       <div class="tabs"><span class="on">Connections</span><span>Accounts</span><span>Strategies</span><span>Positions</span><span>Log</span></div>
@@ -170,8 +184,8 @@
       <div class="sec-title">Key Warnings</div>
     </div>
     <ul class="wl">
-      <li>Never close charts with the <span class="r">Red X</span> &mdash; they disappear permanently.</li>
-      <li>Never close backtest with the <span class="r">Red X</span> &mdash; they disappear permanently.</li>
+      <li>Never close charts with the <span class="r">Red X</span>, they disappear permanently.</li>
+      <li>Never close backtest with the <span class="r">Red X</span>, they disappear permanently.</li>
     </ul>
   </div>
 
